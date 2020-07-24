@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.5.1.min copy.js"></script>
+    <script src="client.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Salary Calculator</h1>
+        <h3>Add Employee</h3>
+        <section>
+            <input id="firstNameIn" type="text" placeholder="First name">
+            <input id="lastNameIn" type="text" placeholder="Last name">
+            <input id="idNumberIn" type="number" placeholder="ID number">
+            <input id="jobTitleIn" type="text" placeholder="Job title">
+            <input id="annualSalaryIn" type="number" placeholder="Annual salary">
+            <button id="SubmitEmployeeData">Submit</button>
+        </section>
+    </header>
+    <main>
+        <h3>Employees</h3>
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>ID Number</th>
+                        <th>Job Title</th>
+                        <th>Annual Salary</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Karl</td>
+                        <td>Beck</td>
+                        <td>03428</td>
+                        <td>Student</td>
+                        <td>0</td>
+                        <td>BUTTON</td>
+                    </tr>
+                </tbody>
+            </table>
+        <section> 
+            <h3 id="monthlyCosts">THE TOTAL MONTHLY COSTS CHANGE</h3>
+        </section>
+
+    </main>
+</body>
+</html>
