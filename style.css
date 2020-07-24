@@ -5,3 +5,8 @@ html {
 input {
     width: 100px
 }
+
+.redBackground {
+    background-color: red
+
+}

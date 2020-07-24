@@ -1,12 +1,13 @@
 console.log('JS');
 
-$(document).ready(readyNow) 
+$(document).ready(readyNow)
 
 function readyNow() {
     console.log('JQ')
     $('#SubmitEmployeeData').on('click', populateTable)
+    $('#employeeTableRows').on('click', '.deleteEmployeeBtn', removeEmployee)
 }
-
+let monthlyCosts = 0;
 function populateTable() {
     console.log('hurray')
     let employeeData = {
@@ -31,14 +32,30 @@ function populateTable() {
             <td><button class="deleteEmployeeBtn">Delete</button></td>
         </tr>`)
     }
+    let monthly = 0;
+    for (let employee of employeeList) {
+        monthly += Number(employee.annualSalary)
+    }
+    let monthlyCosts = monthly/12
 
-    $('#firstNameIn').val('');
-    $('#lastNameIn').val('');
-    $('#idNumberIn').val('');
-        $('#jobTitleIn').val('');
-    $('#annualSalaryIn').val('');
+    if (monthlyCosts > 20000) {
+        $('#monthlyCosts').addClass("redBackground");
+    }
 
+    $('#monthlyCosts').empty()
+    $('#monthlyCosts').append(`<h3 id="monthlyCosts">Total Monthly Cost: $${monthlyCosts}</h3>`)
+
+    // $('#firstNameIn').val('');
+    // $('#lastNameIn').val('');
+    // $('#idNumberIn').val('');
+    // $('#jobTitleIn').val('');
+    // $('#annualSalaryIn').val('');
+ console.log(monthlyCosts)
 };
 
 let = employeeList = [];
 
+function removeEmployee() {
+    console.log('BYE!')
+    $(this).closest('tr').remove()
+}
