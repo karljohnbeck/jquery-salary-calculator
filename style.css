@@ -3,10 +3,21 @@ html {
 }
 
 input {
-    width: 100px
+    width: 120px
 }
 
 .redBackground {
     background-color: red
 
+}
+#monthlyCosts {
+    float: right;
+}
+
+#center {
+    text-align: center;
+}
+
+h6 {
+    display: inline-block;
 }
