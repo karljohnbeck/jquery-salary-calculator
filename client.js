@@ -107,5 +107,6 @@ function removeEmployee() {
         $('#monthlyCosts').removeClass("redBackground");
     }
     $('#monthlyCosts').empty()
+    
     $('#monthlyCosts').append(`<h3 id="monthlyCosts">Total Monthly Cost: $${monthlyCosts}</h3>`)
 }
