@@ -8,7 +8,7 @@ This project was to creat a web page where you would be able to input employee i
 
 ## Screen Shot
 
--Screen Shot-
+page screen shot.png
 
 ## Usage
 How does someone use this application? Tell a user story here.
